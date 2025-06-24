@@ -18,6 +18,15 @@ return {
 					"to #3# cards"
 				},
 			},
+			b_rgmc_face_deck = {
+				name = "Face Deck",
+				text = {
+					"Start with {C:attention}Special{} face cards at the beginning",
+					"(Removes ranks {C:attention}2{} through {C:attention}10{!)"
+				},
+			},
+
+			
 			b_rgmc_hexing = {
 				name = "Hexing Deck",
 				text = {
