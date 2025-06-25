@@ -80,22 +80,22 @@ SMODS.Back {
 
  --- Un
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
 
     key = 'Un',
     card_key = 'U',
-    face_nominal = 1
+    face_nominal = 4
     face = true
-    pos = { x = XXXX},
+    pos = { x = 9 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
-            ignore = false
+            ignore = true
         },
     next = {'2', '3', '4' },
 	
@@ -104,23 +104,24 @@ SMODS.Rank {
     shorthand = 'U',
 	
 	in_pool = RF_rankCheck,
+	straight_edge = true,
 }
  --- Sun
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
 
     key = 'Sun',
     card_key = 'S',
-    face_nominal = 0.9
+    face_nominal = 3
     face = true
-    pos = { x = XXXX },
+    pos = { x = 8 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -134,19 +135,19 @@ SMODS.Rank {
 }
  --- Vizier
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
-    face_nominal =  0.7
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
+    face_nominal =  0.25
     face = true
 	
 	hidden = true,
 
     key = 'Vizier',
     card_key = 'V',
-    pos = { x = 5 },
+    pos = { x = 7 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -161,20 +162,20 @@ SMODS.Rank {
  --- Cavalier
 
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
 
     key = 'Cavalier',
     card_key = 'C',
-    face_nominal = 0.5
+    face_nominal = 0.15
     face = true
-    pos = { x = 5 },
+    pos = { x = 6 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -189,8 +190,8 @@ SMODS.Rank {
  --- Barrister
 
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
@@ -202,7 +203,7 @@ SMODS.Rank {
     pos = { x = 5 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -216,8 +217,8 @@ SMODS.Rank {
 }
  --- Glazier
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
@@ -226,10 +227,10 @@ SMODS.Rank {
     card_key = 'G',
     face_nominal = 0.275
     face = true
-    pos = { x = 5 },
+    pos = { x = 4 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -243,8 +244,8 @@ SMODS.Rank {
 }
  --- Merchant
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
@@ -253,10 +254,10 @@ SMODS.Rank {
     card_key = 'M',
     face_nominal = 0.25
     face = true
-    pos = { x = 5 },
+    pos = { x = 3 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -271,8 +272,8 @@ SMODS.Rank {
 
  --- Tradesmen
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
@@ -281,10 +282,10 @@ SMODS.Rank {
     card_key = 'Tr',
     face_nominal= 0.225
     face = true
-    pos = { x = 5 },
+    pos = { x = 2 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -298,8 +299,8 @@ SMODS.Rank {
 }
  --- Pauper
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
@@ -308,10 +309,10 @@ SMODS.Rank {
     card_key = 'P',
     face_nominal: 0.2
     face = true
-    pos = { x = 5 },
+    pos = { x = 1 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -325,8 +326,8 @@ SMODS.Rank {
 }
  --- Fool
 SMODS.Rank {
-	hc_atlas = 'rank_ex_hc',
-    lc_atlas = 'rank_ex',
+	hc_atlas = 'RF_Cards_hc',
+    lc_atlas = 'RF_Cards',
 	
 	
 	hidden = true,
@@ -335,10 +336,10 @@ SMODS.Rank {
     card_key = 'F',
     face_nominal = 0.1
     face = true
-    pos = { x = 5 },
+    pos = { x = 0 },
     nominal = 1,
 	strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         },
@@ -419,7 +420,7 @@ SMODS.Ranks['Q'].next = {'V', 'K', 'S'}
 --Change straight edge off from Ace, so it start to look at rank 0 instead
 --SMODS.Ranks['Ace'].straight_edge = false
 SMODS.Ranks['Ace'].strength_effect = {
-            fixed = 2,
+            fixed = 1,
             random = false,
             ignore = false
         }
@@ -449,6 +450,8 @@ SMODS.Ranks['U'].RF_prev= {'S'}
 
 SMODS.PokerHand {
     key = 'Royal Family',
+    visible = false,
+    above_hand = 'Straight Flush', 
     chips = 120,
     mult = 8,
     l_chips = 50,
@@ -487,10 +490,13 @@ SMODS.PokerHand {
 
 SMODS.PokerHand {
     key = 'Family',
+    visible = false,
+    above_hand = 'Flush', 
     chips = 20,
     mult = 5,
     l_chips = 10,
     l_mult = 2,
+	
     example = {
         { 'S_M',    true },
         { 'S_V',    true },
