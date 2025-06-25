@@ -345,7 +345,7 @@ SMODS.Rank {
         },
     next = {'P', 'Tr', 'M' },
 	
-	RF_prev= { 'T' },
+	RF_prev= { '10' },
 	
     shorthand = 'F',
 	
