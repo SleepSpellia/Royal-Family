@@ -1,0 +1,11 @@
+{
+    "id": "Royal Family Cav",
+    "name": "RoyalC",
+    "author": ["SleepSpell, Fudge"],
+	"description": "Adds ten new face cards, a whole deck and sleeve, and 2 hand types!",
+    "prefix": "rfCAV",
+    "main_file": "Royal_Family_Cav.lua",
+    "badge_colour": "A2F5F9",
+	"dependencies": ["Steamodded (>=1.0.0~BETA-0408c)"],
+    "version": "1.1.0"
+}
