@@ -142,4 +142,9 @@ SMODS.Atlas({
     px = 34,
     py = 34
 })
-
+SMODS.Atlas({
+    key = "jokerwav",
+    path = "Joker.wav.png",
+    px = 71,
+    py = 95,
+})

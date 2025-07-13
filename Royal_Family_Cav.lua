@@ -12,7 +12,7 @@ SMODS.load_file("SMODSVizier.lua")()
 SMODS.load_file("SMODS_Sun&Un.lua")()
 SMODS.load_file("SMODSUn.lua")()
 SMODS.load_file("SMODSF2B.lua")()
-
+SMODS.load_file("jokerwav.lua")()
 if next(SMODS.find_mod('CardSleeves')) then assert(SMODS.load_file("Sleeves.lua"))() end
 --SMODS.load_file("spectrals.lua")()
 --SMODS.load_file("stakes.lua")()
