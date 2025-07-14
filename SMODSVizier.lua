@@ -18,7 +18,7 @@ SMODS.Rank({
 	in_pool = function(self, args)
        if args then
             if args.initial_deck then
-                return true
+                return false
             elseif args.suit ~= "" then
                 return true
             end
