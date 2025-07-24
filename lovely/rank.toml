@@ -1,0 +1,17 @@
+[manifest]
+version = "1.2"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = '=[SMODS paperback "content/rank/apostle.lua"]'
+pattern = ")"
+position = "after"
+match_indent = true
+override = false
+payload = '''
+SMODS.Ranks['paperback_Apostle'].straight_edge = false
+SMODS.Ranks['paperback_Apostle'].next = {'Ace', 'rfCAV_Sun' }
+SMODS.Ranks['Ace'].next = { 'rfCAV_Sun' }
+'''
