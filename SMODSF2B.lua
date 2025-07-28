@@ -37,6 +37,8 @@ SMODS.Rank({
         Clubs = 1,
         Diamonds = 2,
         Spades = 3,
+	paperback_Stars = 4,
+	paperback_Crowns = 5
 
     }
 })
@@ -80,6 +82,8 @@ SMODS.Rank({
         Clubs = 1,
         Diamonds = 2,
         Spades = 3,
+	paperback_Stars = 4,
+	paperback_Crowns = 5
 
     }
 })
@@ -123,6 +127,8 @@ SMODS.Rank({
         Clubs = 1,
         Diamonds = 2,
         Spades = 3,
+	paperback_Stars = 4,
+	paperback_Crowns = 5
 
     }
 })
@@ -167,6 +173,8 @@ SMODS.Rank({
         Clubs = 1,
         Diamonds = 2,
         Spades = 3,
+	paperback_Stars = 4,
+	paperback_Crowns = 5
 
     }
 })
@@ -211,6 +219,8 @@ SMODS.Rank({
         Clubs = 1,
         Diamonds = 2,
         Spades = 3,
+	paperback_Stars = 4,
+	paperback_Crowns = 5
 
     }
 })
@@ -255,6 +265,8 @@ SMODS.Rank({
         Clubs = 1,
         Diamonds = 2,
         Spades = 3,
+	paperback_Stars = 4,
+	paperback_Crowns = 5
 
     }
 })

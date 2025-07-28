@@ -12,7 +12,7 @@ return {
 		rfCAV_Merchant = "The Rich Merchant",
 		rfCAV_Glazier = "The Savant, Glazier",
 		rfCAV_Barrister = "Your Honor, Mr.Barrister",
-
+		
       		},
 	}
 
