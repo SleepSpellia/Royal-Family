@@ -148,3 +148,21 @@ SMODS.Atlas({
     px = 71,
     py = 95,
 })
+SMODS.Atlas({
+    key = "familytree",
+    path = "familytree.png",
+    px = 71,
+    py = 95,
+})
+SMODS.Atlas({
+    key = "whosthefairest",
+    path = "whosthefairest.png",
+    px = 71,
+    py = 95,
+})
+SMODS.Atlas({
+    key = "jackofeverytrade",
+    path = "jackofeverytrade.png",
+    px = 71,
+    py = 95,
+})

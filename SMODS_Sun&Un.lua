@@ -35,6 +35,8 @@ SMODS.Rank({
         Clubs = 1,
         Diamonds = 2,
         Spades = 3,
+	paperback_Stars = 4,
+	paperback_Crowns = 5
 
     }
 })
@@ -47,3 +49,7 @@ SMODS.Ranks['Ace'].strength_effect = {
 SMODS.Ranks['Ace'].next = {'rfCAV_Sun'}
 SMODS.Ranks['rfCAV_Sun'].next = {'rfCAV_Un'}
 SMODS.Ranks['Ace'].straight_edge = false
+
+
+
+

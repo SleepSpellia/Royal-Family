@@ -12,13 +12,25 @@ SMODS.load_file("SMODSVizier.lua")()
 SMODS.load_file("SMODS_Sun&Un.lua")()
 SMODS.load_file("SMODSUn.lua")()
 SMODS.load_file("SMODSF2B.lua")()
+
+
+--Jokers
 SMODS.load_file("jokerwav.lua")()
+
+SMODS.load_file("familytree.lua")()
+
+SMODS.load_file("whoisthefairestofthemall.lua")()
+SMODS.load_file("jackofeverytrade.lua")()
+
+
+
 if next(SMODS.find_mod('CardSleeves')) then assert(SMODS.load_file("Sleeves.lua"))() end
 --SMODS.load_file("spectrals.lua")()
 --SMODS.load_file("stakes.lua")()
 --SMODS.load_file("stickers.lua")()
 --SMODS.load_file("tags.lua")()
 --SMODS.load_file("vouchers.lua")()
+--if next(SMODS.find_mod('paperback')) then assert(SMODS.load_file("apostle.lua"))() end
 
 
 for _, filename in ipairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "/compat")) do
