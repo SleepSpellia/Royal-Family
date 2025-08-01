@@ -21,8 +21,19 @@ SMODS.load_file("familytree.lua")()
 
 SMODS.load_file("whoisthefairestofthemall.lua")()
 SMODS.load_file("jackofeverytrade.lua")()
+SMODS.load_file("retirementplan.lua")()
+SMODS.load_file("scrabble.lua")()
+SMODS.load_file("terraformingmars.lua")()
+SMODS.load_file("wingspan.lua")()
+SMODS.load_file("ectocooler.lua")()
+SMODS.load_file("jaipur.lua")()
+SMODS.load_file("dropout.lua")()
+SMODS.load_file("farmersalmanac.lua")()
+SMODS.load_file("arknova.lua")()
+SMODS.load_file("spacebase.lua")()
 
 
+SMODS.load_file("crossmod-aiko.lua")()
 
 if next(SMODS.find_mod('CardSleeves')) then assert(SMODS.load_file("Sleeves.lua"))() end
 --SMODS.load_file("spectrals.lua")()

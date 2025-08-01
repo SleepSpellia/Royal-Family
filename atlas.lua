@@ -166,3 +166,41 @@ SMODS.Atlas({
     px = 71,
     py = 95,
 })
+SMODS.Atlas ({
+  key = 'rf_jokers',
+  px = 71,
+  py = 95,
+  path = 'Royal Family Jokers.png'
+})
+SMODS.Atlas ({
+  key = 'ecto_cooler',
+  px = 71,
+  py = 95,
+  path = 'Ecto_Cooler.png'
+})
+SMODS.Atlas ({
+  key = 'jaipur',
+  px = 71,
+  py = 95,
+  path = 'Jaipur.png'
+})
+SMODS.Atlas ({
+  key = 'FarmersAlmanac',
+  px = 71,
+  py = 95,
+  path = 'FarmersAlmanac.png'
+})
+SMODS.Atlas ({
+  key = 'Arknova',
+  px = 71,
+  py = 95,
+  path = 'Arknova.png'
+})
+SMODS.Atlas ({
+  key = 'Spacebase',
+  px = 71,
+  py = 95,
+  path = 'Spacebase.png'
+})
+
+
