@@ -1,5 +1,4 @@
 SMODS.Joker{ --Who is the fairest of them all
-    name = "Who is the fairest of them all",
     key = "whoisthefairestofthemall",
     config = {
         extra = {
@@ -20,12 +19,14 @@ SMODS.Joker{ --Who is the fairest of them all
     rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
+    perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'whosthefairest',
 
+
     calculate = function(self, card, context)
-        if context.after and context.cardarea == G.jokers then
+        if context.cardarea == G.jokers and context.joker_main  then
             if ((function()
     local rankCount = 0
     for i, c in ipairs(context.scoring_hand) do
@@ -38,38 +39,32 @@ SMODS.Joker{ --Who is the fairest of them all
 end)() and (function()
     local rankCount = 0
     for i, c in ipairs(context.scoring_hand) do
-        if c:get_id() == rfCAV_Glazier then
+        if c.base.value == "rfCAV_Glazier" then
             rankCount = rankCount + 1
         end
     end
     
     return rankCount >= 1
 end)()) then
-                local card_front = pseudorandom_element({G.P_CARDS.S_Q, G.P_CARDS.H_Q, G.P_CARDS.D_Q, G.P_CARDS.C_Q}, pseudoseed('add_card_suit'))
-            local new_card = create_playing_card({
-                front = card_front,
-                center = G.P_CENTERS.m_glass
-            }, G.discard, true, false, nil, true)
-            
-            G.E_MANAGER:add_event(Event({
-                func = function()
-                    new_card:start_materialize()
-                    G.play:emplace(new_card)
-                    return true
-                end
-            }))
-                return {
-                    func = function()
+                local card_front = pseudorandom_element({G.P_CARDS.S_Q, G.P_CARDS.H_Q, G.P_CARDS.D_Q, G.P_CARDS.C_Q}, pseudoseed('add_card_hand_suit'))
+                local new_card = create_playing_card({
+                    front = card_front,
+                    center = G.P_CENTERS.m_glass
+                }, G.discard, true, false, nil, true)
+                
+                G.playing_card = (G.playing_card and G.playing_card + 1) or 1
+                new_card.playing_card = G.playing_card
+                table.insert(G.playing_cards, new_card)
+                
                 G.E_MANAGER:add_event(Event({
-                    func = function()
-                        G.deck.config.card_limit = G.deck.config.card_limit + 1
+                    func = function() 
+                        G.hand:emplace(new_card)
+                        new_card:start_materialize()
                         return true
                     end
                 }))
-                draw_card(G.play, G.deck, 90, 'up')
-                SMODS.calculate_context({ playing_card_added = true, cards = { new_card } })
-            end,
-                    message = "Added Card!"
+                return {
+                    message = "Added Card to Hand!"
                 }
             end
         end

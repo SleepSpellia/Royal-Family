@@ -25,7 +25,7 @@ SMODS.Joker{ --Licensed Practitioner
 
     calculate = function(self, card, context)
         if context.repetition and context.cardarea == G.play then
-            if ((context.other_card:get_id() == 11 and context.other_card.seal ~= nil) or (context.other_card:get_id() == 13 and context.other_card.seal ~= nil)) then
+            if ((context.other_card.base.value == "rfCAV_Tradesman" and context.other_card.seal ~= nil) or (context.other_card.base.value = "rfCAV_Glazier" and context.other_card.seal ~= nil)) then
                 return {
                     repetitions = card.ability.extra.repetitions,
                     message = localize('k_again_ex')

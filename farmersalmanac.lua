@@ -37,7 +37,7 @@ SMODS.Joker{ --Farmers Almanac
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.hand and not context.end_of_round  then
-            if context.other_card:get_id() == rfCAV_Pauper then
+            if context.other_card.base.value == "rfCAV_Pauper" then
                 return {
                     func = function()
                     card.ability.extra.farmers_held = (card.ability.extra.farmers_held) + 2

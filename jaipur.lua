@@ -66,7 +66,7 @@ SMODS.Joker{ --Jaipur
         end
         if context.individual and context.cardarea == G.hand and not context.end_of_round and not context.blueprint then
             context.other_card.should_destroy = false
-            if (context.other_card:get_id() == rfCAV_Merchant and (card.ability.extra.Merchcrick or 0) == 0) then
+            if (context.other_card.base.value == "rfCAV_Merchant" and (card.ability.extra.Merchcrick or 0) == 0) then
                 context.other_card.should_destroy = true
                 return {
                     func = function()

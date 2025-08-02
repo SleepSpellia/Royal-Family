@@ -35,7 +35,7 @@ SMODS.Joker{ --jackofeverytrade
         end
         if context.individual and context.cardarea == G.play and not context.blueprint then
             context.other_card.should_destroy = false
-            if (context.other_card:get_id() == Tradesmen and (card.ability.extra.active or 0) == 1) then
+            if (context.other_card.base.value == "rfCAV_Tradesman" and (card.ability.extra.active or 0) == 1) then
                 context.other_card.should_destroy = true
                 return {
                     message = "Destroyed!"
@@ -55,7 +55,7 @@ SMODS.Joker{ --jackofeverytrade
 end)() and (function()
     local rankCount = 0
     for i, c in ipairs(context.scoring_hand) do
-        if c:get_id() == rfCAV_Tradesman then
+        if c.base.value == "rfCAV_Tradesman" then
             rankCount = rankCount + 1
         end
     end

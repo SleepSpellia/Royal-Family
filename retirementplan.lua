@@ -1,3 +1,5 @@
+
+
 SMODS.Joker{ --Retirement Plan
     name = "Retirement Plan",
     key = "retirementplan",
@@ -20,7 +22,7 @@ SMODS.Joker{ --Retirement Plan
     cost = 5,
     rarity = 1,
     blueprint_compat = true,
-    eternal_compat = true,
+    eternal_compat = false,
     unlocked = true,
     discovered = true,
     atlas = 'rf_jokers',
@@ -35,7 +37,7 @@ SMODS.Joker{ --Retirement Plan
             if ((function()
     local rankCount = 0
     for i, c in ipairs(context.full_hand) do
-        if c:get_id() == rfCAV_Tradesman then
+        if c.base.value == "rfCAV_Tradesman" then
             rankCount = rankCount + 1
         end
     end
