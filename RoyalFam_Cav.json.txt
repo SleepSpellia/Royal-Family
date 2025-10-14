@@ -1,7 +1,7 @@
 {
     "id": "Royal Family Cav",
     "name": "RoyalC",
-    "author": ["SleepSpell", "Fudge"],
+    "author": ["SleepSpell", "Fudge", "StingrayV8"],
 	"description": "Adds 10 new face cards to the pool, a new deck to use 'em, and more!",
     "prefix": "rfCAV",
     "main_file": "Royal_Family_Cav.lua",

@@ -1,4 +1,8 @@
 SMODS.current_mod.optional_features = { cardareas = { discard = true, deck = true } }
+local NFS = require("nativefs")
+to_big = to_big or function(a) return a end
+lenient_bignum = lenient_bignum or function(a) return a end
+
 
 
 
@@ -51,6 +55,19 @@ for _, filename in ipairs(NFS.getDirectoryItems(SMODS.current_mod.path .. "/comp
         SMODS.load_file("compat/" .. filename)()
     end
 end
+
+
+
+SMODS.Sound({
+    vol = 0.8,
+    pitch = 1,
+    key = "Royal_Family_Main_Theme_music",
+    path = "Royal_Family_Main_Theme_music.ogg",
+    select_music_track = function()
+        return (G.GAME and G.GAME.round_resets.ante < 9) and 10 or false
+    end,
+})
+
 
 
 local main_menu_hook = Game.main_menu
